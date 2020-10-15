@@ -1,6 +1,6 @@
 # CppPractice
 I'm practicing cpp with my friend
-Here are my cpp notes
+Here are my cpp notes, I hope these can help anyone else trying to learn the language
 
 COMPILING
 
@@ -55,3 +55,36 @@ WHILE LOOPS
 
 While loops fuunction the same as in JS or Python and have similar syntax - while (try<=3){~~~~ try++;};
 For loops also have similar syntax - for(int i=0; i<10;i++){ ~~~~~~~ };
+
+ERROR MESSAGES
+
+Compile time errors - errors found by the code compiler
+  Syntax errors - errors due to false syntax
+  Type errors - errors where there is a mismatch between types declared
+Link time errors - errors found by the linker when trying to combine files for execution
+  Using unidentified functions or mistyping functions
+Run time errors - errors found by checks while running a program
+  Trying to divide by 0 or open a non existent file
+Logic errors - errors manually found by the programmer while looking for the cause of erroneous results
+  Stupid mistakes
+
+VECTORS
+
+Vectors are a sequence of elements that you can access by an index, similar to JS arrays
+Vectors can only use one datatype and the datatype cannot be changed post declaration
+
+In order to use vectors, you must add the library with #include <vector>
+  
+Vector syntax is as follows - std::vector <type> name = {~~~};
+Data is stored between curly brackets
+
+Vecotrs can be presized, allowing you to determine the amount of data within them - std::vector <type> name (presized #s)
+
+In indexing and output, JS arrays and cpp vectors are the same - vectorname[index#]
+
+Vectors can be measured using the .size() command
+
+You can add or remove elements from vectors - i.e. vector named words
+words.push_back("hey") adds the element "hey" to the end of the vector named words if it is a string vector
+words.pop_back() will remove the last element from the vector words (.pop_back() has no return value)
+Elements must be added using seperate declarations of .push_back(), not all at once
